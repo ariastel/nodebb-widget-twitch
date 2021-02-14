@@ -15,8 +15,5 @@
 			"hook": "filter:widget.render:aa_twitch", "method": "renderTwitchWidget"
 		}
   ],
-	"templates": "templates",
-	"less": [
-		"less/widget.less"
-	]
+	"templates": "templates"
 }
