@@ -28,6 +28,8 @@ Widget.renderTwitchWidget = async function (widget) {
 	const data = {
     channel_name: widget.data.channel_name,
     parent_url: url.parse(nconf.get('url')).hostname,
+    autoplay: widget.data.autoplay === 'on',
+    muted: widget.data.muted === 'on',
   };
 	widget.html = await app.renderAsync('widgets/twitch', data);
 	return widget;
