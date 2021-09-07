@@ -5,6 +5,7 @@
   "main": "library.js",
   "repository": "git://github.com/ariastel/nodebb-widget-twitch.git",
   "scripts": {
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -21,9 +22,17 @@
   ],
   "license": "MIT",
   "nbbpm": {
-    "compatibility": "^1.16.x"
+    "compatibility": "^1.17.x"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-nodebb": "^0.0.2",
+    "eslint-plugin-import": "^2.24.2"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }
